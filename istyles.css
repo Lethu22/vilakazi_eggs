@@ -1,0 +1,240 @@
+/* Global Styles */ 
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Header */
+.sticky-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #e9ec34; /* Consider adjusting this color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#logo img {
+    max-width: 150px;
+}
+
+#menu ul {
+    display: flex;
+    list-style: none;
+}
+
+#menu ul li {
+    margin: 0 15px;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+#menu ul li a:hover {
+    background-color: #f4b41a;
+    color: white;
+}
+
+#menu ul li a:focus {
+    outline: 2px solid #f4b41a; /* Add focus styles */
+}
+
+/* Cart Icon */
+.cart-container {
+    position: relative;
+}
+
+.cart-icon {
+    color: #333;
+    font-size: 28px;
+}
+
+.cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #f44336;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+*
+#home-slider {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('slider-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+/* Products Section */
+#products {
+    background-color: white;
+}
+
+#products h2 {
+    color: #f4b41a;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+}
+
+/* Product Cards */
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-body h5 {
+    color: #333;
+    font-size: 18px;
+}
+
+.card-text {
+    color: #666;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.btn-success {
+    background-color: #f4b41a;
+    border-color: #f4b41a;
+}
+
+.btn-success:hover {
+    background-color: #e09f17;
+    border-color: #e09f17;
+}
+
+.btn-success:focus {
+    outline: 2px solid #e09f17; /* Add focus styles */
+}
+
+/* About Section */
+#about {
+    background-color: #726139c2;
+    color: black;
+    padding: 50px 0;
+}
+
+#about h2 {
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Contact Form Box Styles */
+.contact-box {
+    background-color: #fff; /* White background */
+    border: 2px solid #f4b41a; /* Yellow border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-box:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Form Input and Textarea Styles */
+.contact-box .form-group input,
+.contact-box .form-group textarea {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+.contact-box .form-group input:focus,
+.contact-box .form-group textarea:focus {
+    border-color: #f4b41a; /* Yellow focus border */
+    outline: none;
+    box-shadow: 0 0 5px rgba(244, 180, 26, 0.5); /* Subtle glow effect */
+}
+
+/* Form Submit Button */
+.contact-box .btn-primary {
+    background-color: #f4b41a; /* Consistent yellow button */
+    border-color: #f4b41a;
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+.contact-box .btn-primary:hover {
+    background-color: #e09f17; /* Darker shade on hover */
+    border-color: #e09f17;
+}
+
+.contact-box .btn-primary:focus {
+    outline: 2px solid #e09f17; /* Add focus styles */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sticky-nav {
+        flex-direction: column;
+    }
+
+    #menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .card-img-top {
+        height: 180px;
+    }
+}
